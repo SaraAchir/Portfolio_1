@@ -1,0 +1,28 @@
+.socialConnect{
+    background: white;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    top: 90%;
+    left: -5%;
+    border: 1px solid rgb(245, 238, 242);
+    box-shadow: 0 0 20px 0 pink;
+}
+.socialConnect .socialLink{
+ 
+  justify-content: center;
+  align-items: center;
+  transition: transform .2s ease-out ,box-shadow .2s ease-out;
+}
+.socialConnect .socialLink :hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 #777777;
+    border: 5px solid white;
+    border-radius: 50%;
+
+
+}

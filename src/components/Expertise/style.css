@@ -1,0 +1,12 @@
+.rightImgContainer{
+    width: 237px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+
+}
+@media screen and (max-width:768px){
+    .rightImgMeContainer{
+        display:none;
+    }
+}
