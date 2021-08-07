@@ -1,7 +1,7 @@
 .projectImgContainer{
     width: 50%;
     overflow: hidden;
-    margin: 50px;
+    margin:  50px;
 }
 .projectImgContainer img{
     max-width: 100%;
