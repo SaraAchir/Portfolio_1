@@ -9,7 +9,7 @@
 @media screen and (max-width:786px){
     .projectImgContainer{
         width: 100%;
-        margin: 0;
+        margin: 1px;
         padding: 50px;
         box-sizing: border-box;
     }
