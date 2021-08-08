@@ -1,9 +1,10 @@
 import React from 'react'
-import Button from '../UI/Button'
-import MediumHeading from '../UI/MediumHeading'
 import SmallHeading from '../UI/SmallHeading'
 import Title from '../UI/Title'
-import saraImage from '../../assets/images/saraImage.png'
+import ensa from '../../assets/images/ensa.png'
+import university from '../../assets/images/university.png'
+
+
 
 /**
 * @author
@@ -11,44 +12,45 @@ import saraImage from '../../assets/images/saraImage.png'
 **/
 
 const Qualification = (props) => {
+    const diplomas = [
+        {
+          title :"Diplôme d'ingénieur en génie informatique",
+          mediumTitle :"Ecole nationale des sciences appliquées  (ENSA)",
+            desc : 'De 09/2015 à 07/2020',
+            path:ensa,
+            link:"https://www.ensamaroc.com/"
+
+
+                },
+                {
+                    title :"Diplôme d'études universitaires générales (DEUG) en économie",
+                    mediumTitle :"L'Université Moulay-Ismaïl",
+                      desc : 'De 09/2013 à 07/2015',
+                      path:university,
+                      link:"http://www.umi.ac.ma/"
+
+                          },
+                          {
+                            title :"Baccalauréat",
+                            mediumTitle :"Sciences physiques",
+                              desc : 'De 09/2012 à 07/2013',
+                                  },
+     
+    ]
   return(
-    <div className="container" style={{padding:'50px 0'}}>
-        <SmallHeading text="Qualifications"/>
-        <MediumHeading text="My eductaion"/>
-        <div className="flexRow flexCol align-center justify-sb">
-            <div>
-                <img src={saraImage}/>
-            </div>
-            <div className="flexRow"
-                 style={{background:"#fff",padding:"10px 50px",boxSizing:'border-box',display:'flex',width:"0px",borderRadius:'20px',justifyContent:'center '}} >
-                <div className="mlr-10">
-                    <Button label="Hire me "/>
-                </div>
-                <div className="mlr-10">
-                    <Button label="Download CV" inverse="true"/>
-                </div>
-            </div>
-        </div>
-        <div>
-            <Title
-            title="MAKAUT"
-            mediumTitle="Computer Science and  Engg"
-            desc="lorem text"/>
-                        <Title
-            title="MAKAUT"
-            mediumTitle="Computer Science and  Engg"
-            desc="lorem text"/>
-                        <Title
-            title="MAKAUT"
-            mediumTitle="Computer Science and  Engg"
-            desc="lorem text"/>
-                        <Title
-            title="MAKAUT"
-            mediumTitle="Computer Science and  Engg"
-            desc="lorem text"/>
+    <div className="container" data-aos="zoom-out-up" >
+        <SmallHeading text="Formations"/>
+      
+        <div style={{display :'flex',flexDirection:'column',alignItems:'center'}}>
+        {diplomas.map((diploma,index) =>  <Title
+                key ={index}
+                title={diploma.title}
+                mediumTitle={diploma.mediumTitle}
+                desc={diploma.desc}
+                path={diploma.path}
+                link={diploma.link}/>)
 
-
-
+        }
         </div>
     </div>
    )

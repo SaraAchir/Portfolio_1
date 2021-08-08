@@ -61,8 +61,8 @@ const Experiences= (props) => {
     }
 ]
   return(
-    <div className="container ">
-        <Card >
+    <div className="container" style={{marginTop:"30px"}} data-aos="zoom-in-up">
+        <Card style={{paddingTop:'30px'}} >
             <div className="mtb-10">
                 <SmallHeading text="Expériences"/>
                 

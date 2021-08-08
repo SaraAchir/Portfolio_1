@@ -14,32 +14,32 @@ import video from '../../assets/videos/demo.mp4'
 
 const LatestProjects = (props) => {
   return(
-    <div className="container" style={{marginTop :'50px',marginBottom :"50px"}}>
-        <Card >
+    <div  className="container" style={{marginTop :'50px',marginBottom :"50px"}} data-aos="flip-left">
+        <Card style={{paddingTop:'30px'}}>
         <SmallHeading text="Mes dernières projets"/>
     <div className=" flexCol align-center justify-sb">
             <div >
                 
                 <MediumHeading style={{textTransform: "uppercase"}} text="Mon portfolio"/>
-                <div  style={{display:'flex', justifyContent :'center'}}>
+                <div className="mtb-10"  style={{display:'flex', justifyContent :'center'}}>
                    Ce portfolio est crée avec React js version 17
                 </div>
-                <div className=" flexRow" style={{justifyContent :'center'}}>
-                    <video src={video} width="500" height="400" controls>
+                <div className=" flexRow" style={{justifyContent :'center',marginTop:'-50px'}}>
+                    <video src={video} width="500" height="400" controls style={{marginBottom:'50px'}}>
                     </video>
                 </div>
             </div>
             </div>
 
-            <div className=" flexCol align-center justify-sb">
+            <div className=" flexCol align-center justify-sb ">
             <div >
                 
                 <MediumHeading style={{textTransform: "uppercase"}} text="Mon projet de fin d'étude"/>
                 <div  style={{display:'flex', justifyContent :'center'}}>
                    Ce projet concerne une application web de gestion des utilisateurs ;il est crée avec Angular 9 et asp .net core 3
                 </div>
-                <div className=" flexRow" style={{justifyContent :'center'}}>
-                    <video src={video} width="500" height="400" controls>
+                <div className=" flexRow" style={{justifyContent :'center',marginTop:'-50px'}}>
+                    <video src={video} width="500" height="400" controls >
                     </video>
                 </div>
             </div>

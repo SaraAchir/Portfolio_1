@@ -55,7 +55,7 @@ const Specializing = (props) => {
         <Card style={{padding:'30px'}}>
         <SmallHeading text="Ce que je fais "/>
         <MediumHeading text="Spécialisée en"/>
-        <div className="mtb-10" >
+        <div data-aos="fade-up" className="mtb-10" >
             {
                 skills.map((skill,index) =>  <Skill
                 key ={index}

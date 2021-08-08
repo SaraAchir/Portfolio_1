@@ -1,5 +1,7 @@
 import React from 'react'
 import SocialConnect from '../UI/SocialConnect'
+import './style.css'
+import { Link,NavLink } from 'react-router-dom'
 
 /**
 * @author
@@ -10,22 +12,20 @@ const Footer = (props) => {
   return(
     <div className="container">
         <div className="flexRow flexCol justify-sb align-center" style={{margin:"50px 0"}}>
-        <div className="mtb-10">
-            <SocialConnect/>
+        <div>
         </div>
         <div className="footerMenus mtb-10">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolios</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+                <NavLink to="/">Acceuil</NavLink>
+                <NavLink to="/Specializing">Spécialités</NavLink>
+                <NavLink to="/Experiences">Expériences</NavLink>
+                <NavLink to="/LatestProjects">Projets</NavLink>
+                <NavLink to="/Qualification">Formations</NavLink>
+                <NavLink to="/Contact">Contact</NavLink>
 
             </nav>
         </div>
-        <div>
-        <i class='fas fa-comments mtb-10' style={{fontSize:"48px",Color:"red"}}></i>
-        </div>
+        
         </div>
         
     </div>

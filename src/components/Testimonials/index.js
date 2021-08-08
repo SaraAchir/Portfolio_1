@@ -14,10 +14,11 @@ const Testimonials = (props) => {
   return(
     <div className="container">
         <div>
-            <SmallHeading text="Testimonials"/>
-            <MediumHeading text ="What people say"/>
+            <SmallHeading text="Contact"/>
+         
+            <MediumHeading text ={  <i class='fas fa-comments mtb-10' style={{fontSize:"48px"}}></i>}/>
         </div>
-        <div className="flexRow wrap align-center justify-sb" style={{padding:"50px 0"}}>
+        {/* <div className="flexRow wrap align-center justify-sb" style={{padding:"50px 0"}}>
             <div className="testimonialImgContainer">
                 <img src={saraImage}/>
             </div>
@@ -38,15 +39,29 @@ const Testimonials = (props) => {
             <div className="testimonialImgContainer ">
                 <img src={saraImage}/>
             </div>
-        </div>
-        <Card className="m-auto contactCard" >
+        </div> */}
+        {/* <Card className="m-auto contactCard" >
             <p className="text-center font-12 mtb-10   ">
                 Have any project in mind?<span className="primaryColor"> Say hello at </span>
             </p>
             <p className="text-center font-25">
                 hachirsara31@gmail.com
             </p>
-        </Card>
+        </Card> */}
+        <p className="text-center font-12 mtb-10   ">
+        Vous avez un projet en tête ? <span className="primaryColor"> Dites bonjour à : </span>
+            </p>
+           <a href="mailto:hachirsara31@gmail.com"> 
+               <p className="text-center font-25">
+                hachirsara31@gmail.com
+            </p>
+            
+            
+            </a>
+           <p className="text-center font-14 mtb-10"> <span>Suivez-moi sur : </span>
+        <a  href="https://www.linkedin.com/in/sara-hachir-b48914196/">
+        <p><i class="fa fa-linkedin-square mtb-10" style={{fontSize:'30px'}}></i></p>
+        </a></p>
     </div>
    )
 
