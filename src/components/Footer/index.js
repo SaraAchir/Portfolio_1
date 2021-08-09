@@ -2,15 +2,24 @@ import React from 'react'
 import SocialConnect from '../UI/SocialConnect'
 import './style.css'
 import { Link,NavLink } from 'react-router-dom'
-
+import { FormattedDate, FormattedNumber, FormattedPlural,useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 /**
 * @author
 * @function Footer
 **/
 
 const Footer = (props) => {
-  return(
-    <div className="container">
+  //return(
+    
+  
+   //)
+   const intl = useIntl();
+  return (
+
+
+
+<div className="container">
         <div className="flexRow flexCol justify-sb align-center" style={{margin:"50px 0"}}>
         <div>
         </div>
@@ -27,9 +36,25 @@ const Footer = (props) => {
         </div>
         
         </div>
+
+
+
+
+        <div className="container mt">
+      {/* <... */}
+      <br />
+      <input placeholder={intl.formatDate(Date.now())} />
+      <div className="container hero">
+      <h1><FormattedMessage id="learn_to" /></h1>
+      {/* ... */}
+    </div>
+    </div>
         
     </div>
-   )
+
+
+    
+  );
 
  }
 

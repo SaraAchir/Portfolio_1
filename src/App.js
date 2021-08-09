@@ -11,6 +11,9 @@ import {BrowserRouter ,Route} from 'react-router-dom'
 import Home from './components/Home'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { IntlProvider } from "react-intl";
+import { LOCALES } from "./i18n/locales";
+ import { messages } from "./i18n/messages";
 
 /**
 * @author
@@ -18,13 +21,32 @@ import 'aos/dist/aos.css'
 **/
 
 const App = (props) => {
+  //const locale = LOCALES.JAPANESE;
+  const locale = navigator.language;
+  console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",locale)
+let lang;
+if (locale==="en-US") {
+   lang = LOCALES.ENGLISH;
+} else {
+   if (locale === "fr") {
+       lang = LOCALES.FRENCH;
+   } else {
+       lang = LOCALES.JAPANESE;
+   }
+}
   useEffect(()=>{
 AOS.init({
   duration:1000,
 });
   },[])
   return(
-    <BrowserRouter>
+
+    <IntlProvider
+    messages={messages[lang]}
+    locale={lang}
+    defaultLocale={LOCALES.ENGLISH}
+  >       <div>
+          <BrowserRouter>
     <Hero/>
       <Route exact path="/" component={Home}/>
       <Route srict path="/Specializing" component={Specializing}/>
@@ -35,6 +57,8 @@ AOS.init({
       <Route path="/Contact" component={Testimonials}/>
       <Footer/>
     </BrowserRouter>
+    </div>
+  </IntlProvider>
    )
 
  }
