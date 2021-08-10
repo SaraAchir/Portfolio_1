@@ -28,7 +28,7 @@ let lang;
 if (locale==="en-US") {
    lang = LOCALES.ENGLISH;
 } else {
-   if (locale === "fr") {
+   if (locale === "fr" || locale === "fr-FR") {
        lang = LOCALES.FRENCH;
    } else {
        lang = LOCALES.JAPANESE;

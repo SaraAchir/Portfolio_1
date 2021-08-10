@@ -45,7 +45,7 @@ const Footer = (props) => {
       <br />
       <input placeholder={intl.formatDate(Date.now())} />
       <div className="container hero">
-      <h1><FormattedMessage id="learn_to" /></h1>
+      <h1><FormattedMessage id="salutaion" /></h1>
       {/* ... */}
     </div>
     </div>

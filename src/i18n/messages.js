@@ -2,7 +2,7 @@ import { LOCALES } from "./locales";
 
 export const messages = {
   [LOCALES.ENGLISH]: {
-    learn_to: "Hello, let's learn how to use React-Intl",
+    salutaion: "Hello, Iam ",
     price_display:
       "How {n, number, ::currency/USD} is displayed in your selected language",
     number_display:
@@ -11,9 +11,13 @@ export const messages = {
     // menu
     about_project: "About the project",
     contact_us: "Contact us",
+    job:"Software engineer",
+    full_stack:"Full stack developper  Angular/React/Asp.Net(core)",
+    hire_me:"Hire me",
+    download_cv:"Download CV",
   },
   [LOCALES.FRENCH]: {
-    learn_to: "Bonjour, apprenons à utiliser React-Intl",
+    salutaion: "Bonjour, je suis ",
     price_display:
       "Comment {n, number, ::currency/USD} $ s'affiche dans la langue sélectionnée",
     number_display:
@@ -22,6 +26,11 @@ export const messages = {
     // menu
     about_project: "À propos du projet",
     contact_us: "Contactez-nous",
+    job:"ingénieur logiciel",
+    full_stack:"Développeuse Full stack Angular/React/Asp.Net(core)",
+    hire_me:"Engagez moi",
+    download_cv:"Téléchargez le CV",
+
   },
   [LOCALES.GERMAN]: {
     learn_to: "Hallo, lass uns lernen, wie man React-Intl benutzt",
